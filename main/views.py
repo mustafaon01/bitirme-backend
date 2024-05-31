@@ -34,3 +34,13 @@ class ProfileView(generics.RetrieveAPIView):
 class UniversityProgramsView2List(generics.ListAPIView):
     queryset = UniversityProgramsView2.objects.all()
     serializer_class = UniversityProgramsView2Serializer
+
+
+class GeneralInformationView(generics.ListAPIView):
+    queryset = GenelBilgilerLast2024.objects.all()
+    serializer_class = GenaralInformationSerializer
+
+
+class UniversitiesView(generics.ListAPIView):
+    queryset = Universities.objects.all()
+    serializer_class = UniversitiesSerializer

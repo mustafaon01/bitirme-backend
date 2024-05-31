@@ -50,3 +50,15 @@ class UniversityProgramsView2Serializer(serializers.ModelSerializer):
     class Meta:
         model = UniversityProgramsView2
         fields = '__all__'
+
+
+class UniversitiesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Universities
+        fields = '__all__'
+
+
+class GenaralInformationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GenelBilgilerLast2024
+        fields = '__all__'
